@@ -1,0 +1,78 @@
+#gameboard {
+	border: solid black;
+	float: right;
+	width : 50%;
+	height: 50%;
+}
+
+#stats {
+	border: solid black;
+	float: left;
+	width : 50%;
+	height: 50%;
+}
+
+label, th, td{
+	font-size:20;
+}
+td, th{ 
+	border: solid black;
+}
+
+.gameBoard {
+	width : 100%;
+	height: 100%;
+}
+
+#startID, #endID, #addPlayer {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#startID span, #endID span, #addPlayer span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#startID span:after, #endID span:after, #addPlayer span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#startID:hover span, #endID:hover span, #addPlayer:hover span {
+  padding-right: 25px;
+}
+
+#startID:hover span:after, #endID:hover span:after, #addPlayer:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#startID {
+	background-color: #5AEC40;
+	color:#FFFFFF;
+}
+
+#endID {
+	background-color: #FF4C21;
+	color:#FFFFFF;
+}
+
+#addPlayer {
+	background-color: #FFB044;
+	color:#FFFFFF;
+}

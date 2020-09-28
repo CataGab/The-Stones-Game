@@ -1,0 +1,208 @@
+<html>
+<head>
+<title>#1 ASS</title>
+</head>
+<script type="text/javascript" src="main.js"></script>
+<link rel="stylesheet" type="text/css" href="main.css">
+
+<body onload="onreload()">
+<h1>#1 ASS</h1>
+<table id="stats">
+
+<tr id="highlight1">
+	<th style="background-color:red; color:white;" id="player1">Player1</th>
+	<td style="background-color:red; color:white;"><center>
+		
+		<label class="container"><b>Double-move card:</b>
+		<input type="checkbox" id="double1" checked="checked" onclick="doubleCard('double1')">
+		<span class="checkmark"></span>
+		</label>
+		
+		<label class="container"><b>Replacement card:</b>
+		<input type="checkbox" id="replacement1" checked="checked" onclick="replacementCard('replacement1')">
+		<span class="checkmark"></span>
+		</label>
+		
+		<label class="container"><b>Freedom card:</b>
+		<input type="checkbox" id="freedom1" checked="checked" onclick="freedomCard('freedom1')">
+		<span class="checkmark"></span>
+		</label></center>
+	</td>
+	<td style="background-color:red; color:white;"><center><b>Score: <span id="score1">0</span></b></center></td>
+</tr>
+
+<tr id="highlight2">
+	<th style="background-color:green; color:white;" id="player2">Player2</th>
+	<td style="background-color:green; color:white;"><center>
+		
+		<label class="container"><b>Double-move card:</b>
+		<input type="checkbox" id="double2" checked="checked" onclick="doubleCard('double2')">
+		<span class="checkmark"></span>
+		</label>
+		
+		<label class="container"><b>Replacement card:</b>
+		<input type="checkbox" id="replacement2" checked="checked" onclick="replacementCard('replacement2')">
+		<span class="checkmark"></span>
+		</label>
+		
+		<label class="container"><b>Freedom card:</b>
+		<input type="checkbox" id="freedom2" checked="checked" onclick="freedomCard('freedom2')">
+		<span class="checkmark"></span>
+		</label></center>
+	</td>
+	<td style="background-color:green; color:white;"><center><b>Score: <span id="score2">0</span></b></center></td>
+</tr>
+
+<tr id="highlight3">
+	<th style="background-color:blue; color:white;" id="player3">Player3</th>
+	<td style="background-color:blue; color:white;"><center>
+		
+		<label class="container"><b>Double-move card:</b>
+		<input type="checkbox" id="double3" checked="checked" onclick="doubleCard('double3')">
+		<span class="checkmark"></span>
+		</label>
+		
+		<label class="container"><b>Replacement card:</b>
+		<input type="checkbox" id="replacement3" checked="checked" onclick="replacementCard('replacement3')">
+		<span class="checkmark"></span>
+		</label>
+		
+		<label class="container"><b>Freedom card:</b>
+		<input type="checkbox" id="freedom3" checked="checked" onclick="freedomCard('freedom3')">
+		<span class="checkmark"></span>
+		</label></center>
+	</td>
+	<td style="background-color:blue; color:white;"><center><b>Score: <span id="score3">0</span></b></center></td>
+</tr>
+
+<tr id="highlight4">
+	<th style="background-color:purple; color:white;" id="player4">Player4</th>
+	<td style="background-color:purple; color:white;" ><center>
+		
+		<label class="container"><b>Double-move card:</b>
+		<input type="checkbox" id="double4" checked="checked" onclick="doubleCard('double4')">
+		<span class="checkmark"></span>
+		</label>
+		
+		<label class="container"><b>Replacement card:</b>
+		<input type="checkbox" id="replacement4" checked="checked" onclick="replacementCard('replacement4')">
+		<span class="checkmark"></span>
+		</label>
+		
+		<label class="container"><b>Freedom card:</b>
+		<input type="checkbox" id="freedom4" checked="checked" onclick="freedomCard('freedom4')">
+		<span class="checkmark"></span>
+		</label></center>
+	</td>
+	<td style="background-color:purple; color:white;" ><center><b>Score: <span id="score4">0</span></b></center></td>
+</tr>
+
+<tr id="highlight5">
+	<th style="background-color:orange; color:white;" id="player5">Player5</th>
+	<td style="background-color:orange; color:white;"><center>
+		
+		<label class="container"><b>Double-move card:</b>
+		<input type="checkbox" id="double5" checked="checked" onclick="doubleCard('double5')">
+		<span class="checkmark"></span>
+		</label>
+		
+		<label class="container"><b>Replacement card:</b>
+		<input type="checkbox" id="replacement5" checked="checked" onclick="replacementCard('replacement5')">
+		<span class="checkmark"></span>
+		</label>
+		
+		<label class="container"><b>Freedom card:</b>
+		<input type="checkbox" id="freedom5" checked="checked" onclick="freedomCard('freedom5')">
+		<span class="checkmark"></span>
+		</label></center>
+	</td>
+	<td style="background-color:orange; color:white;"><center><b>Score: <span id="score5">0</span></b></center></td>
+</tr>
+
+
+
+</table>
+
+<table id="gameboard">
+<tr>
+	<td><button class="gameBoard" id="b0.0" onclick="gameBoard('b0.0')"></button></td>
+    <td><button class="gameBoard" id="b0.1" onclick="gameBoard('b0.1')"></button></td>
+	<td><button class="gameBoard" id="b0.2" onclick="gameBoard('b0.2')"></button></td>
+	<td><button class="gameBoard" id="b0.3" onclick="gameBoard('b0.3')"></button></td>
+    <td><button class="gameBoard" id="b0.4" onclick="gameBoard('b0.4')"></button></td>
+	<td><button class="gameBoard" id="b0.5" onclick="gameBoard('b0.5')"></button></td>
+	<td><button class="gameBoard" id="b0.6" onclick="gameBoard('b0.6')"></button></td>
+    <td><button class="gameBoard" id="b0.7" onclick="gameBoard('b0.7')"></button></td>
+	<td><button class="gameBoard" id="b0.8" onclick="gameBoard('b0.8')"></button></td>
+	<td><button class="gameBoard" id="b0.9" onclick="gameBoard('b0.9')"></button></td>
+</tr>
+<tr>
+	<td><button class="gameBoard" id="b1.0" onclick="gameBoard('b1.0')"></button></td>
+    <td><button class="gameBoard" id="b1.1" onclick="gameBoard('b1.1')"></button></td>
+	<td><button class="gameBoard" id="b1.2" onclick="gameBoard('b1.2')"></button></td>
+	<td><button class="gameBoard" id="b1.3" onclick="gameBoard('b1.3')"></button></td>
+    <td><button class="gameBoard" id="b1.4" onclick="gameBoard('b1.4')"></button></td>
+	<td><button class="gameBoard" id="b1.5" onclick="gameBoard('b1.5')"></button></td>
+	<td><button class="gameBoard" id="b1.6" onclick="gameBoard('b1.6')"></button></td>
+    <td><button class="gameBoard" id="b1.7" onclick="gameBoard('b1.7')"></button></td>
+	<td><button class="gameBoard" id="b1.8" onclick="gameBoard('b1.8')"></button></td>
+	<td><button class="gameBoard" id="b1.9" onclick="gameBoard('b1.9')"></button></td>
+</tr>
+<tr>
+	<td><button class="gameBoard" id="b2.0" onclick="gameBoard('b2.0')" ></button></td>
+    <td><button class="gameBoard" id="b2.1" onclick="gameBoard('b2.1')"></button></td>
+	<td><button class="gameBoard" id="b2.2" onclick="gameBoard('b2.2')"></button></td>
+	<td><button class="gameBoard" id="b2.3" onclick="gameBoard('b2.3')"></button></td>
+    <td><button class="gameBoard" id="b2.4" onclick="gameBoard('b2.4')"></button></td>
+	<td><button class="gameBoard" id="b2.5" onclick="gameBoard('b2.5')"></button></td>
+	<td><button class="gameBoard" id="b2.6" onclick="gameBoard('b2.6')"></button></td>
+    <td><button class="gameBoard" id="b2.7" onclick="gameBoard('b2.7')"></button></td>
+	<td><button class="gameBoard" id="b2.8" onclick="gameBoard('b2.8')"></button></td>
+	<td><button class="gameBoard" id="b2.9" onclick="gameBoard('b2.9')"></button></td>
+</tr> 
+<tr>
+	<td><button class="gameBoard" id="b3.0" onclick="gameBoard('b3.0')"></button></td>
+    <td><button class="gameBoard" id="b3.1" onclick="gameBoard('b3.1')"></button></td>
+	<td><button class="gameBoard" id="b3.2" onclick="gameBoard('b3.2')"></button></td>
+	<td><button class="gameBoard" id="b3.3" onclick="gameBoard('b3.3')"></button></td>
+    <td><button class="gameBoard" id="b3.4" onclick="gameBoard('b3.4')"></button></td>
+	<td><button class="gameBoard" id="b3.5" onclick="gameBoard('b3.5')"></button></td>
+	<td><button class="gameBoard" id="b3.6" onclick="gameBoard('b3.6')"></button></td>
+    <td><button class="gameBoard" id="b3.7" onclick="gameBoard('b3.7')"></button></td>
+	<td><button class="gameBoard" id="b3.8" onclick="gameBoard('b3.8')"></button></td>
+	<td><button class="gameBoard" id="b3.9" onclick="gameBoard('b3.9')"></button></td>
+</tr> 
+<tr>
+	<td><button class="gameBoard" id="b4.0" onclick="gameBoard('b4.0')"></button></td>
+    <td><button class="gameBoard" id="b4.1" onclick="gameBoard('b4.1')"></button></td>
+	<td><button class="gameBoard" id="b4.2" onclick="gameBoard('b4.2')"></button></td>
+	<td><button class="gameBoard" id="b4.3" onclick="gameBoard('b4.3')"></button></td>
+    <td><button class="gameBoard" id="b4.4" onclick="gameBoard('b4.4')"></button></td>
+	<td><button class="gameBoard" id="b4.5" onclick="gameBoard('b4.5')"></button></td>
+	<td><button class="gameBoard" id="b4.6" onclick="gameBoard('b4.6')"></button></td>
+    <td><button class="gameBoard" id="b4.7" onclick="gameBoard('b4.7')"></button></td>
+	<td><button class="gameBoard" id="b4.8" onclick="gameBoard('b4.8')"></button></td>
+	<td><button class="gameBoard" id="b4.9" onclick="gameBoard('b4.9')"></button></td>
+</tr> 
+<tr>
+	<td><button class="gameBoard" id="b5.0" onclick="gameBoard('b5.0')"></button></td>
+    <td><button class="gameBoard" id="b5.1" onclick="gameBoard('b5.1')"></button></td>
+	<td><button class="gameBoard" id="b5.2" onclick="gameBoard('b5.2')"></button></td>
+	<td><button class="gameBoard" id="b5.3" onclick="gameBoard('b5.3')"></button></td>
+    <td><button class="gameBoard" id="b5.4" onclick="gameBoard('b5.4')"></button></td>
+	<td><button class="gameBoard" id="b5.5" onclick="gameBoard('b5.5')"></button></td>
+	<td><button class="gameBoard" id="b5.6" onclick="gameBoard('b5.6')"></button></td>
+    <td><button class="gameBoard" id="b5.7" onclick="gameBoard('b5.7')"></button></td>
+	<td><button class="gameBoard" id="b5.8" onclick="gameBoard('b5.8')"></button></td>
+	<td><button class="gameBoard" id="b5.9" onclick="gameBoard('b5.9')"></button></td>
+</tr> 
+</table>
+
+<center>
+<button id= "startID" style="vertical-align:middle;"><span>START</span></button>
+<button id= "endID" onclick="endGame()" style="vertical-align:middle" ><span>END GAME</span></button>
+<button id= "addPlayer" onclick="createPlayer()" style="vertical-align:middle"><span>ADD PLAYER</span></button>
+</center>
+
+</body>
+</html>
